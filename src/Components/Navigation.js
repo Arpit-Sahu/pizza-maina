@@ -23,12 +23,14 @@ const Navigation = () => {
                         <Link to="/products">Products</Link>
                     </li>
                     <li className="ml-6">
+                        <Link to="/cart">
                         <div style={cartStyle}>
                             <span>
                                 10
                             </span>
                             <img className="ml-2" src="/images/cart.png" alt="cart"/>
                         </div>
+                        </Link>
                     </li>
                 </ul>
         </nav>
