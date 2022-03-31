@@ -15,14 +15,14 @@ function SingleProduct(){
             setProduct(product);
             // console.log(product);
         });
-    }, [])
+    }, [params._id])
     
 
     return(
         <div className="container mx-auto mt-12">
             <button className="mb-12 font-bold" onClick={()=> {history.goBack()} } >Back</button>
             <div className="flex">
-                <img src={product.image}></img>
+                <img src={product.image} alt=""></img>
                 <div className='ml-16'>
                     <h1 className="text-xl font-bold"> {product.name} </h1>
                     <div className='text-md'>{product.size}</div>
